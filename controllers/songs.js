@@ -1,7 +1,6 @@
 const express = require("express");
 const router = express.Router();
 const Songs = require("../models/Songs");
-// const Artists = require('../models/Artists')
 
 //! GET - homepage displaying ALL SONGS
 router.get("/", (req, res) => {
@@ -10,14 +9,12 @@ router.get("/", (req, res) => {
   });
 });
 
-
 //! Click to show and redirect to specific /:id
 router.get("/:id", (req, res) => {
   Songs.findOne({ _id: req.params.id }).then(json => {
     res.send(json);
   });
 });
-
 
 //! Update specific item by ID
 router.put("/:id", (req, res) => {
