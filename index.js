@@ -3,6 +3,7 @@ const bodyParser = require("body-parser");
 const methodOverride = require("method-override");
 
 const songsController = require("./controllers/songs");
+const artistsController = require('./controllers/artists')
 // const songsModels = require("./models/Songs");
 
 const app = express();
@@ -19,6 +20,7 @@ app.use(methodOverride("_method"));
 
 //! Web URL uses anything after /songs based on controllers
 app.use("/songs", songsController);
+app.use("/artists", artistsController);
 
 app.listen(3000, () => {
   console.log("Server running on Port 3000");
