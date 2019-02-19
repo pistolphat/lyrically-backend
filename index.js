@@ -7,8 +7,6 @@ const artistsController = require('./controllers/artists')
 
 const app = express();
 
-app.use(cors())
-
 app.use(bodyParser.urlencoded({ extended: true })); //interprets key value pairs in URLs
 app.use(bodyParser.json()); //interprets a stringified JSON object on the request body
 app.use(methodOverride("_method"));
