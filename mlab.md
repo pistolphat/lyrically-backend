@@ -6,3 +6,6 @@ db password: loganleo3
 uri:
 
 "mongodb://logan:loganleo3@ds343895.mlab.com:43895/lyrically-backend"
+
+
+heroku config:set MLAB_URL=mongodb://logan:loganleo3@ds343895.mlab.com:43895/lyrically-backend
