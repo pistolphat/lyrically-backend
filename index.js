@@ -17,7 +17,7 @@ app.use(bodyParser.urlencoded({ extended: true })); //interprets key value pairs
 app.use(bodyParser.json()); //interprets a stringified JSON object on the request body
 app.use(methodOverride("_method"));
 
-//! Web URL uses anything after /songs based on controllers
+//! Web URL uses anything after /songs & /artists - based on controller routes.
 app.use("/songs", songsController);
 app.use("/artists", artistsController);
 
