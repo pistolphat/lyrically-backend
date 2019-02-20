@@ -1,31 +1,31 @@
 [
   {
-    "title": "Yellow",
-    "lyrics": "Look at the stars, look how they shine for you",
-    "artist": "Coldplay"
+    "Title": "Yellow",
+    "Artist": "Coldplay",
+    "Lyrics": "Look at the stars, look how they shine for you"
   },
 
   {
-    "title": "Alright",
-    "lyrics": "Do you hear me? Do you feel me? We gon be alright",
-    "artist": "Kdot"
+    "Title": "Alright",
+    "Artist": "Kdot",
+    "Lyrics": "Do you hear me? Do you feel me? We gon be alright"
   },
 
   {
-    "title": "Come Fly With Me",
-    "lyrics": "Come fy with me, let's float down to Peru",
-    "artist": "Frank Sinatra"
+    "Title": "Come Fly With Me",
+    "Artist": "Frank Sinatra",
+    "Lyrics": "Come fy with me, let's float down to Peru"
   },
 
   {
-    "title": "Kentucky",
-    "lyrics": "Let's get lost in Kentucky. A one-way bridge connects the river like a switch.",
-    "artist": "Logan Vath"
+    "Title": "Kentucky",
+    "Artist": "Logan Vath",
+    "Lyrics": "Let's get lost in Kentucky. A one-way bridge connects the river like a switch."
   },
 
   {
-    "title": "Fortunate Son",
-    "lyrics": "Some of us are made to wave the flag, oozin red, white, and blue.",
-    "artist": "Creedence Clearwater Revival"
+    "Title": "Fortunate Son",
+    "Artist": "Creedence Clearwater Revival",
+    "Lyrics": "Some of us are made to wave the flag, oozin red, white, and blue."
   }
 ]
