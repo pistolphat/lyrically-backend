@@ -31,16 +31,16 @@ router.delete("/:id", (req, res) => {
   })
 });
 
-// //! Create new json based on model.
-// router.post("/", (req, res) => {
-//   Artists.create({
-//     name: req.body.name,
-//     genre: req.body.genre
-//   }).then(json => {
-//     res.send(json)
-//     // res.redirect("/");
-//   });
-// });
+//! Create new json based on model.
+router.post("/", (req, res) => {
+  Artists.create({
+    Name: req.body.Name,
+    Genre: req.body.Genre
+  }).then(json => {
+    res.send(json)
+    // res.redirect("/");
+  });
+});
 
 // //! Click to show and redirect to specific /:id
 // router.get("/:id", (req, res) => {

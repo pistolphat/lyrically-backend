@@ -30,22 +30,20 @@ router.delete("/:id", (req, res) => {
   })
 });
 
+//! Create new json based on model - from homepage
+router.post("/", (req, res) => {
+  Songs.create({
+    Title: req.body.Title,
+    Artist: req.body.Artist,
+    Lyrics: req.body.Lyrics
+  }).then(json => {
+    res.send(json);
+  });
+});
+
 // Clicked to add new item - take to new page
 // router.get("/new", (req, res) => {
 //   res.render("recipes/new");
-// });
-
-// // Create new json based on model - from homepage
-// router.post("/", (req, res) => {
-//   Songs.create({
-//     title: req.body.title,
-//     ingredients: req.body.ingredients,
-//     instructions: req.body.instructions
-//   }).then(json => {
-//     res.redirect("/");
-//   });
-// });
-
-
+// }); 
 
 module.exports = router;
