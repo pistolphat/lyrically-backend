@@ -23,6 +23,13 @@ router.put("/:id", (req, res) => {
   });
 });
 
+//! Delete
+router.delete("/:id", (req, res) => {
+  Songs.findOneAndDelete({ _id: req.params.id }).then(() => {
+    res.send('Delete Success');
+  })
+});
+
 // Clicked to add new item - take to new page
 // router.get("/new", (req, res) => {
 //   res.render("recipes/new");
@@ -39,11 +46,6 @@ router.put("/:id", (req, res) => {
 //   });
 // });
 
-// // Delete
-// router.delete("/:id", (req, res) => {
-//   Songs.findOneAndDelete({ _id: req.params.id }).then(() => {
-//     res.redirect("/");
-//   })
-// });
+
 
 module.exports = router;
