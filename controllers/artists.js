@@ -34,8 +34,8 @@ router.delete("/:id", (req, res) => {
 //! Create new json based on model.
 router.post("/", (req, res) => {
   Artists.create({
-    Name: req.body.Name,
-    Genre: req.body.Genre
+    name: req.body.Name,
+    genre: req.body.Genre
   }).then(json => {
     res.send(json)
     // res.redirect("/");
