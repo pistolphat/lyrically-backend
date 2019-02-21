@@ -33,9 +33,9 @@ router.delete("/:id", (req, res) => {
 //! Create new json based on model - from homepage
 router.post("/", (req, res) => {
   Songs.create({
-    title: req.body.Title,
-    artist: req.body.Artist,
-    lyrics: req.body.Lyrics
+    title: req.body.title,
+    artist: req.body.artist,
+    lyrics: req.body.lyrics
   }).then(json => {
     res.send(json);
   });
