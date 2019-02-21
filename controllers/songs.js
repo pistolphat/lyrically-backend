@@ -19,6 +19,7 @@ router.get("/:id", (req, res) => {
 //! Update specific item by ID
 router.put("/:id", (req, res) => {
   Songs.findOneAndUpdate({ _id: req.params.id }, req.body).then(json => {
+    console.log(req.body);
     res.send(json);
   });
 });
