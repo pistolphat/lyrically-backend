@@ -6,9 +6,9 @@ const Schema = mongoose.Schema;
 // as an argument to mongoose.Schema, and the object values are the data type of that field
 
 const Songs = new Schema({
-  title: String,
-  artist: String,
-  lyrics: String
+  Title: String,
+  Artist: String,
+  Lyrics: String
 });
 
 module.exports = mongoose.model("Songs", Songs);
