@@ -6,8 +6,8 @@ const Schema = mongoose.Schema
 // as an argument to mongoose.Schema, and the object values are the data type of that field
 
 const Artists = new Schema({
-  Name: String,
-  Genre: String,
+  name: String,
+  genre: String,
 })
 
 module.exports = mongoose.model("Artists", Artists)
