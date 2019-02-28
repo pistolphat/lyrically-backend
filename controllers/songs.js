@@ -32,7 +32,7 @@ router.delete("/:id", (req, res) => {
 });
 
 //! Create new json based on model - from homepage
-router.post("/", (req, res) => {
+router.post("/new", (req, res) => {
   Songs.create({
     Title: req.body.Title,
     Artist: req.body.Artist,
