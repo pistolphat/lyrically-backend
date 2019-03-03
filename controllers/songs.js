@@ -42,8 +42,8 @@ router.post("/", (req, res) => {
 });
 
 // Clicked to add new item - take to new page
-// router.get("/new", (req, res) => {
-//   res.render("recipes/new");
-// }); 
+router.get("/new", (req, res) => {
+  res.render("songs/new");
+}); 
 
 module.exports = router;
