@@ -9,19 +9,19 @@ router.post("/artist", (req, res) => {
     Genre: req.body.Genre
   }).then(json => {
     res.send(json);
-    res.console.log(req)
+    // res.console.log(req)
   });
 });
 
 
-router.post("/song", (req, res) => {
-  Songs.create({
-    title: req.body.title,
-    artist: req.body.artist,
-    lyrics: req.body.lyrics
-  }).then(json => {
-    res.send(json);
-  });
-});
+// router.post("/song", (req, res) => {
+//   Songs.create({
+//     title: req.body.title,
+//     artist: req.body.artist,
+//     lyrics: req.body.lyrics
+//   }).then(json => {
+//     res.send(json);
+//   });
+// });
 
 module.exports = router;
