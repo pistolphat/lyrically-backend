@@ -34,17 +34,17 @@ router.delete("/:id", (req, res) => {
 //! Create new json based on model - from homepage
 router.post("/new", (req, res) => {
   Songs.create({
-    Title: req.body.Title,
-    Artist: req.body.Artist,
-    Lyrics: req.body.Lyrics
+    title: req.body.title,
+    artist: req.body.artist,
+    lyrics: req.body.lyrics
   }).then(json => {
     res.send(json);
   });
 });
 
 // Clicked to add new item - take to new page
-// router.get("/new", (req, res) => {
-//   res.render("recipes/new");
-// }); 
+router.get("/new", (req, res) => {
+  res.render("songs/new");
+}); 
 
 module.exports = router;

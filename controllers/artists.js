@@ -31,16 +31,16 @@ router.delete("/:id", (req, res) => {
   })
 });
 
-//! Create new json based on model.
-router.post("/", (req, res) => {
-  Artists.create({
-    Name: req.body.Name,
-    Genre: req.body.Genre
-  }).then(json => {
-    res.send(json)
-    // res.redirect("/");
-  });
-});
+// //! Create new json based on model.
+// router.post("/", (req, res) => {
+//   Artists.create({
+//     name: req.body.Name,
+//     genre: req.body.Genre
+//   }).then(json => {
+//     res.send(json)
+//     // res.redirect("/");
+//   });
+// });
 
 // //! Click to show and redirect to specific /:id
 // router.get("/:id", (req, res) => {
@@ -49,7 +49,6 @@ router.post("/", (req, res) => {
 //   });
 // });
 
-// Clicked to add new item - take to new page
 // router.get("/new", (req, res) => {
 //   res.render("recipes/new");
 // });
